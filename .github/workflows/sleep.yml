@@ -1,0 +1,12 @@
+name: Sleep
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: sleep
+        run: |
+           sleep 30
