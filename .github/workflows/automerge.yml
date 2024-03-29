@@ -10,7 +10,7 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - uses: tjenkinson/gh-action-auto-merge-dependency-updates@728fd2c
+      - uses: tjenkinson/gh-action-auto-merge-dependency-updates@728fd2c23e20fd9bffeef84fc5cdb9cf83797063
         with:
           use-auto-merge: true
           allowed-actors: tjenkinson
