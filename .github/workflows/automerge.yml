@@ -1,0 +1,16 @@
+name: Auto Merge Dependency Updates
+
+on:
+  - pull_request_target
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: tjenkinson/gh-action-auto-merge-dependency-updates@b3ff4e3fbb98ab375bfb36bf9bba7516bbc093eb
+        with:
+          use-auto-merge: true
+          allowed-actors: tjenkinson
